@@ -45,11 +45,12 @@
         </activity>
         
         <meta-data
-    android:name="com.google.android.gms.ads.APPLICATION_ID"
-    android:value="ca-app-pub-6120680228939302~2229282900"/>
-            
-        <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+        <!-- Automatically download ML Kit barcode model via Google Play Services on install -->
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode" />
     </application>
 </manifest>
